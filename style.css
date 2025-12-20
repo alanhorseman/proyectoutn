@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   /* border: 1px solid red; */
 }
 
@@ -57,14 +57,20 @@ ul{
   align-items: center;
   
   max-width: 1022px;
-  padding: 0px 16px;
+  padding: 16px;
   margin: 0px auto;
+}
+.img-logo-container{
+  margin-right: 19px;
+  max-height: 37px;
 }
 .header__container img{
   cursor: pointer;
 
   max-width: 140px;
-  height: 37px;
+  width: 100%;
+  max-height: 37px;
+  height: 100%;
 }
 .header__container.header__container_nav{
   padding: 16px;
@@ -98,7 +104,6 @@ ul{
   transform: translateY(-50%); /*esta propiedad no la conocia, pero la vi
     en los stylos de la pagina, aprendi para que y como se usaba y decidi
     dejar esta manera en vez de la manera que puse arriba dejando el top: 25%*/
-
   width: 1px;
   height: 24px;
   background-color: #bebebe;
@@ -106,28 +111,37 @@ ul{
 
 .header__container_a-container{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 2px;
+  margin-left: 29px;
+}.header__container_a-container div{
+
 }
 .btn-header{
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
 
-  width: 160px;
-  height: 41px;
+  min-width: 160px;
+  min-height: 41px;
+  margin: 0 4px;
+  padding: 6px 24px;
   border-radius: 50px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
 .btn-header.btn_1{
-  color: #662ADE;
   background-color: white;
+  color: #662ADE;
   border: 1px solid #662ADE;
 }
 .btn-header.btn_2{
-  color: white;
   background-color: #662ADE;
+  color: white;
   border: none;
 }
 
