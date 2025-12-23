@@ -25,12 +25,14 @@ ul{
   font-size: 40px;
   line-height: 42px;
   font-weight: 700;
+  padding: 5px 0px;
 }
 
 .h2-subtitle{
   font-size: 30px;
   font-weight: 600;
   line-height: 32px;
+  margin-bottom: 24px;
 }
 
 .card-reverse{
@@ -90,7 +92,6 @@ ul{
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
 }.header__container_nav ul li:hover{
   cursor: pointer;
   background-color: #E5D6FF;
@@ -115,8 +116,6 @@ ul{
   justify-content: space-between;
   gap: 2px;
   margin-left: 29px;
-}.header__container_a-container div{
-
 }
 .btn-header{
   display: inline-flex;
@@ -148,6 +147,7 @@ ul{
 
 
 
+
 /*  MAIN  */
 
 main {
@@ -164,27 +164,49 @@ main {
   padding: 30px 0px;
   gap: 20px;
 }
+.h2-container-beneficios{
+  max-width: 1022px;
+  width: 100%;
+  margin-bottom: 17px;
+}
+.h2-section{
+  text-align: center;
+  font-size: 43px;
+  font-weight: 600;
+  letter-spacing: -.038em;
+  margin: 8px 0px;
+}
 .article-container{
   display: flex;
-  justify-content: center;
-}.article-container article{
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  max-width: 1022px;
+  width: 100%;
+}
+.article-container article{
   display: flex;
   flex-direction: column;
+  flex: 1;
   justify-content: center;
   
-  width: 315px;
-  height: 260px;
+  max-width: 317px;
+  min-height: 184px;
+  margin-top: 12px;
   padding: 24px;
-  gap: 20px;
-  border-radius: 30px;
+  gap: 16px;
+  border-radius: 16px;
   background-color: white;
-}.article-container article h3{
+}.article-container article h2{
+  min-height: 28px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 600;
-}.article-container article p{
+  letter-spacing: -0.3px;
+}
+.article-container article p{
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 400;
   color: #6a6a6a;
 }
@@ -193,8 +215,9 @@ main {
   justify-content: center;
   align-items: center;
 
-  width: 50px;
-  height: 50px;
+  width: 62px;
+  height: 62px;
+  padding: 19px;
   border-radius: 7px;
   background-color: #F0EBFD;
 }.span-svg-beneficios svg{
@@ -208,9 +231,11 @@ main {
   justify-content: space-between;
   align-items: center;
 
-  width: 980px;
-  margin: 10px 20px;
-  padding: 40px 40px;
+  max-width: 1022px;
+  margin: 10px 0px;
+  width: 100%; 
+  padding: 32px 60px;
+  gap: 32px;
   border-radius: 31px;
   background-color: #370C73;
 }.section-beneficios__comercios-container div{
@@ -218,6 +243,8 @@ main {
   flex-direction: column;
   justify-content: flex-start;
 
+  max-height: 70px;
+  height: 100%;
   margin-left: 13px;
   gap: 10px;
   color: white;
@@ -231,28 +258,18 @@ main {
   line-height: 22px;
 }
 
-.btn-generico{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 170px;
-  height: 50px;
-  border-radius: 30px;
-  color: #652cdf;
-  background-color: white;
-}.btn-generico a{
-  font-weight: 700;
-  color: #662ADE;
-}
-
 .section-cobros{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-self: center;
 
+  max-width: 1022px;
   padding: 40px 0px;
+}
+.section-cobros p{
+  margin-top: 16px;
+  margin-bottom: 36px;
 }
 .cards-container {
   display: flex;
@@ -266,9 +283,9 @@ main {
   align-items: center;
 
   width: 1022px;
+  width: 100%;
   height: 350px;
-  padding: 30px 30px;
-  border-radius: 30px;
+  border-radius: 32px;
   background-color: white;
 }
 .cards-container__card img {
@@ -278,24 +295,33 @@ main {
 .cards-container__card .info-card{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
+  max-width: 511px;
+  max-height: 350px;
   height: 100%;
-  gap: 50px;
-  justify-content: center;
+  padding: 32px 24px;
+  gap: 32px;
 }.info-card .text-card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   width: 100%;
-  gap: 20px;
-}.text-card p {
+  height: 208px;
+}
+.text-card p {
   /*viendo el html original y buscando, aprendí la propiedad 'inherit'*/
   color: inherit;
-  font-size: inherit;
+  font-size: 18px;
   line-height: inherit;
 
   font-weight: 400;
 }
 .cards-container__card .info-card a{
+  max-width: 162px;
+  padding: 10px 32px;
+  font-size: 14px;
   background-color: #662BDF;
   color: white;
 }
