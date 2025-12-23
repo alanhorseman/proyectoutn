@@ -21,6 +21,26 @@ ul{
   list-style: none;
 }
 
+.btn-generico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: max-content; */
+  border-radius: 30px;
+
+  max-width: 162px;
+  height: 44px;
+  padding: 10px 32px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.45712px;
+
+  background-color: #662BDF;
+  color: white;
+}
+
 .h2-title{
   font-size: 40px;
   line-height: 42px;
@@ -256,6 +276,13 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}.section-beneficios__comercios-container span{
+  background-color: white;
+}
+.section-beneficios__comercios-container span a {
+  /* color: #662BDF;
+  background-color: white; */
+  color: #662BDF;
 }
 
 .section-cobros{
@@ -314,17 +341,30 @@ main {
   /*viendo el html original y buscando, aprendí la propiedad 'inherit'*/
   color: inherit;
   font-size: 18px;
-  line-height: inherit;
+  /* line-height: inherit; */
+  line-height: 27px;
 
+  margin: 0px;
   font-weight: 400;
 }
 .cards-container__card .info-card a{
-  max-width: 162px;
+  /* max-width: 162px;
+  height: 44px;
   padding: 10px 32px;
+
   font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.45712px;
+
   background-color: #662BDF;
-  color: white;
+  color: white; */
+
 }
+
+
+
+
 
 /*  FOOTER  */
 
@@ -338,21 +378,23 @@ footer{
   flex-direction: column;
   align-items: flex-start;
 
-  width: 100%;
   max-width: 1022px;
+  width: 100%;
 
-  padding: 30px 0px;
+  margin: 0px auto;
+  padding: 24px 0px;
+}
+.footer-container img {
+  margin-bottom: 9px;
 }
 .footer-container__list-container{
   display: flex;
   justify-content: space-between;
 
-  width: 91%;
-  padding: 7px 0px;
-  gap: 50px;
+  width: 100%;
 }
 .footer-container__list-container ul {
-  gap: 10px;
+  width: 237px;
 }
 .footer-container__list-container ul li{
   margin: 8px 0px;
