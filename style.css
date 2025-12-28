@@ -595,6 +595,11 @@ footer{
 
 @media screen and (width < 425px){
 
+  .cards-container .cards-container__card .info-card a{
+    max-width: 327px;
+    font-size: 16px;
+  }
+
   .footer-container img {
     align-self: center;
   }
@@ -623,20 +628,23 @@ footer{
   }
   .section-cobros .cards-container .cards-container__card{
     flex-direction: column-reverse;
-    max-height: 419px;
+    max-height: 487px;
   }
   .cards-container__card .info-card{
     align-items: center;
     max-width: 320px;
     max-height: 232px;
+    height: 100%;
     padding: 24px;
   }
+  .cards-container__card .info-card .text-card {
+    max-height: 114px;
+    height: 100%;
+  }
+  
   .cards-container__card .cards-container__card__img-container{
     max-width: 320px;
     max-height: 187px;
-  }
-  .cards-container__card .info-card .text-card{
-    max-height: 83px;
   }
   .info-card .text-card h2{
     font-size: 24px;
