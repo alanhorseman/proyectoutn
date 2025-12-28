@@ -373,7 +373,7 @@ main {
   /*viendo el html original y buscando, aprendí la propiedad 'inherit'*/
   color: inherit;
   font-size: 18px;
-  /* line-height: inherit; */
+  color: #6a6a6a;
   line-height: 27px;
 
   margin: 0px;
@@ -581,6 +581,59 @@ footer{
   }
   .cards-container__card .cards-container__card__img-container{
     max-width: 719px;
+  }
+  .cards-container__card .info-card .text-card{
+    max-height: 83px;
+  }
+  .info-card .text-card h2{
+    font-size: 24px;
+  }
+  .info-card .text-card p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (width < 425px){
+
+  .footer-container img {
+    align-self: center;
+  }
+  .footer-container .footer-container__list-container{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: -12px;
+    margin-right: -12px;
+    row-gap: 24px;
+  }
+
+  .footer-container .footer-container__list-container > ul{
+    width: auto;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (width < 320px) {
+  .section-cobros .cards-container {
+    height: auto;
+    width: 100%;
+  }
+  .section-cobros .cards-container .cards-container__card{
+    flex-direction: column-reverse;
+    max-height: 419px;
+  }
+  .cards-container__card .info-card{
+    align-items: center;
+    max-width: 320px;
+    max-height: 232px;
+    padding: 24px;
+  }
+  .cards-container__card .cards-container__card__img-container{
+    max-width: 320px;
+    max-height: 187px;
   }
   .cards-container__card .info-card .text-card{
     max-height: 83px;
